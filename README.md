@@ -5,3 +5,6 @@ Professor Tim Kyle: Initial submission to walk thru the git hub upload. This fil
 but I still need to do the second file punishment and the two videos and then will declare final. If you can take a
 quick glance as the file and confirm I have moved this to where you can see it, it will let me know I made it thru 
 initial submission for this file. v/rMike Craft
+
+PS. Added the file puhishment.py. Will work on the videos and submit finals in the next day or two. I wanted to 1: give you a look at the code, and 2: make sure I am using git to get the files to you. thanks v/r Mike
+
