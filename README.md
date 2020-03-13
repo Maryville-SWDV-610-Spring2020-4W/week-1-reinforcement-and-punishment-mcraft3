@@ -8,3 +8,7 @@ initial submission for this file. v/rMike Craft
 
 PS. Added the file puhishment.py. Will work on the videos and submit finals in the next day or two. I wanted to 1: give you a look at the code, and 2: make sure I am using git to get the files to you. thanks v/r Mike
 
+Fri 3/13 am uploaded an update to is_multiple.py that added pre-emptive error control for divide by zero for the second number m.
+
+Fri 3/13 uploaded admin cleanup and a minor update to string formatting for punishment.py.
+
