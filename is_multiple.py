@@ -11,7 +11,8 @@ m), that takes two integer values and returns
 True is n is a multiple of m, that is, n = mi
 for some integer i, and False otherwise."""
 # ------------------------------------------------
-# GitHub Link: https://classroom.github.com/a/nUSsBI1q
+"""GitHub Link:
+https://classroom.github.com/a/nUSsBI1q"""
 # ------------------------------------------------
 """In addition to coding these tasks, you must
 post a video running and explaining your code.
@@ -35,25 +36,25 @@ attached rubric to see how it is scored."""
 3. Multiple Output - Returns the proper output"""
 # ------------------------------------------------
 """Answer 3 canvas questions in the canvas
-#    submission text box.
+submission text box.
 
-# 1. How many hours do you estimate you used
-#    completing this assignment?
+1. How many hours do you estimate you used
+     completing this assignment?
 
-# 2. What was easiest for you when completing
-#    this assignment?
+2. What was easiest for you when completing
+     this assignment?
 
-# 3. What was the most difficult challenge you
-#    experienced when completing this assignment
+3. What was the most difficult challenge you
+     experienced when completing this assignment
 """
 # ------------------------------------------------
 """Python function, is_multiple(n, m),
 that takes two integer values and returns True
-
 n = mi for some integer i,
 and False otherwise."""
 
-def is_multiple(n,m): # called by main function, variables as inputs.
+def is_multiple(n,m):
+# called by main function, variables as inputs.    
 # call from main with variables n,m
 #   boolean True if n is / m and remainder is
 #   equal to 0 (modulo or remainder is 0). This
@@ -67,62 +68,92 @@ def is_multiple(n,m): # called by main function, variables as inputs.
     else:
         print()
         print(n, "is not a multiple of", m)
-
+# ------------------------------------------------
 def getInput(): # called by main.
 # validation loop 1 to catch n errors. Will only
 #   allow an int entry; str or float excepted.
     while True:
         try:
             n = int(input("Enter integer n: "))
-        except ValueError: # exception error here to block system error and stop / crash program.
-            print("\nValueError: Entry must be an integer (not a decimal, letter, or non whole number). Try again.\n")
+# exception error here to block system error and
+#   stop / crash program.            
+        except ValueError: 
+            print("""
+
+Error: Entry must be an integer (not a decimal,
+letter, or non whole number). Try again.
+
+""")
             continue # loop again if error
-        else: # if an int (validated good entry) break out of loop
+# if an int (validated good entry) break out of
+#   loop.        
+        else: 
             break
-            
 # validation loop 2 to catch m errors.
-# First checks for divide by zero here so it doesn't show up on line 64 from modulo.
-# Second checks for whole number integer, not decimal, or letter, or non whole number character.
-# Will only allow an int entry; str or float excepted.
+# First checks for divide by zero here so it
+#   doesn't show up on line 64 from modulo.
+# Second checks for whole number integer, not
+#   decimal, or letter, or non whole number
+#   character. Will only allow an int entry; str
+#   or float excepted.
     while True:
         try:
-            m = int(input("Enter integer m: ")) # get input, set to variable m
-            if m == 0: # boolean if true (they entered 0, try again.)
-                print("\nZeroDivisionError: can not divide by zero, 2nd number can not be zero. Try again.\n")
+# get input, set to variable m            
+            m = int(input("Enter integer m: "))
+# boolean if true (they entered 0, try again.)            
+            if m == 0: 
+                print("""
+
+ZeroDivisionError: Can not divide by zero;
+2nd number can not be zero. Try again.
+
+""")
                 continue # loop again if error
-            
-        except ValueError: # exception error here to block system error and stop / crash program.
-            print("ERROR: entry must be an integer. Try again.")
+# exception error here to block system error and
+#   stop / crash program.            
+        except ValueError: 
+            print("""
+
+Error: Entry must be an integer (not a decimal,
+letter, or non whole number). Try again.
+
+""")
             continue # loop again if error
-        
-        
-        else: # if an int (validated good entry) break out of loop
+# if an int (validated good entry) break out of
+#   loop.        
+        else: 
             break
-        
-    return n, m    # return the variables to the function that called (main).
-      
+# return the variables to the function that
+#   called (main).        
+    return n, m    
+# ------------------------------------------------      
 def main():
 # print introduction
     print("""
-This program takes two integer values (positive
-or negative whole number integers) as inputs and
+This program takes two integer values (positive or
+negative whole number integers) as inputs and
 outputs to screen (if True) that integer n is a
 multiple of integer m (that is, n = mi for some
 integer i), or will output to screen (if False)
 that integer n is not a multiple of integer m.
-Under this definition, a 0 is allowed for n,
-and is considered a multiple of m as 0 = m*0.
+Under this definition, a 0 is allowed for n, and
+is considered a multiple of m as 0 = m*0.
 
 If either number is not an integer (text or
 symbol, or is a decimal number, you will get and
 error and will try again to enter that integer.
 
-If the second entry m is a 0, this program
-will show an error, and require the user to
-try again. A 0 in the second entry is an
-attempt to divide by zero and not allowed.""")
-    print()
-    n, m = getInput() # call the function to get inputs and return variables
-    is_multiple(n,m) # call the function with variables n,m
+If the second entry m is a 0, this program will
+show an error, and require the user to try again.
+A 0 in the second entry is an attempt to divide
+by zero and not allowed.
+
+""")
+
+# call the function to get inputs and return
+#   variables.    
+    n, m = getInput()
+# call the function with variables n,m
+    is_multiple(n,m) 
     
 main()
