@@ -4,7 +4,7 @@ Module 1.9: Reinforcement and Punishment
 Maryville University of St. Louis, MO
 John E. Simon School of Business
 Professor Timothy Kyle
-Student Mike Craft"""
+Student Mike Craft """
 # ------------------------------------------------
 """A common punishment for school children is to
 write out a sentence multiple times.  Write a
