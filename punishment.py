@@ -17,7 +17,7 @@ https://classroom.github.com/a/nUSsBI1q"""
 # ------------------------------------------------
 """In addition to coding these tasks, you must
 post a video running and explaining your code.
-This allows for you to demonstrate what is
+This allows for you to demonstrate what is 
 occurring in the code as it is happening and how
 it is organized.  You must also run your code in
 the video to explain the output and why the

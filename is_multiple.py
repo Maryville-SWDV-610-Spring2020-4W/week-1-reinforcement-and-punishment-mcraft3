@@ -87,8 +87,8 @@ letter, or non whole number). Try again.
             continue # loop again if error
 # if an int (validated good entry) break out of
 #   loop.        
-        else: 
-            break
+        else: # if input is valid exit loop
+            break # break exits loop
 # validation loop 2 to catch m errors.
 # First checks for divide by zero here so it
 #   doesn't show up on line 64 from modulo.
@@ -121,8 +121,8 @@ letter, or non whole number). Try again.
             continue # loop again if error
 # if an int (validated good entry) break out of
 #   loop.        
-        else: 
-            break
+        else: # if input is valid exit loop
+            break  # break exits loop
 # return the variables to the function that
 #   called (main).        
     return n, m    
