@@ -51,6 +51,7 @@ def main():           # main function
         # line to print loaded into variable L.
         L = "I will never spam my friends again."
 #string formatting with line number and string        
-        print("{:3}. {}".format(a, L))  
+        #print("{:3}. {}".format(a, L))
+        print("%3i. %s" % (a, L))
 
 main() # call main
