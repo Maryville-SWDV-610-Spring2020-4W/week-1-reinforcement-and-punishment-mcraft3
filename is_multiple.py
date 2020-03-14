@@ -4,7 +4,7 @@ SWDV-610-4W DATA STRUCTURES: WK 1 - Module 1.9
 Maryville University of St. Louis, MO
 John E. Simon School of Business
 Professor Timothy Kyle
-Student Mike Craft"""
+Student Mike Craft """
 # ------------------------------------------------
 """# Write a short Python function, is_multiple(n,
 m), that takes two integer values and returns
