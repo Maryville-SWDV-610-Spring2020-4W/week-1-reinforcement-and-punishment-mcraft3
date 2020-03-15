@@ -6,9 +6,9 @@ John E. Simon School of Business
 Professor Timothy Kyle
 Student Mike Craft """
 # ------------------------------------------------
-"""# Write a short Python function, is_multiple(n,
+"""Write a short Python function, is_multiple(n,
 m), that takes two integer values and returns
-True is n is a multiple of m, that is, n = mi
+True if n is a multiple of m, that is, n = mi
 for some integer i, and False otherwise."""
 # ------------------------------------------------
 """GitHub Link:
@@ -70,13 +70,19 @@ def is_multiple(n,m):
         print(n, "is not a multiple of", m)
 # ------------------------------------------------
 def getInput(): # called by main.
+    
 # validation loop 1 to catch n errors. Will only
-#   allow an int entry; str or float excepted.
-    while True:
-        try:
+# allow an int entry; str or float excepted.
+    running = True # initialize variable for True
+    
+    #while True: # alt to use of while var
+    
+    # conditional loop to get valid n input
+    while running: 
+        try: # try/except to handle errors
             n = int(input("Enter integer n: "))
-# exception error here to block system error and
-#   stop / crash program.            
+        # exception error here to block system
+        # error and stop / crash program.            
         except ValueError: 
             print("""
 
@@ -85,24 +91,36 @@ letter, or non whole number). Try again.
 
 """)
             #continue if error not required here
-            
-# if an int (validated good entry) break out of
-#   loop.        
+              
         else: # if input is valid exit loop
-            break # break exits loop
+            #break  # break exits loop; required
+            #if you don't initialize while var
+            
+            running = False # while var exits loop
+                         # eliminates use of break
+# ------------------------------------------------        
 # validation loop 2 to catch m errors.
+
 # First checks for divide by zero here so it
-#   doesn't show up on line 64 from modulo.
+#   doesn't show up on line 65 from modulo.
+
 # Second checks for whole number integer, not
 #   decimal, or letter, or non whole number
 #   character. Will only allow an int entry; str
 #   or float excepted.
-    while True:
-        try:
-# get input, set to variable m            
+
+    looping = True # initialize variable for True
+    
+    #while True: alt to use of while var
+    
+    # conditional loop to get valid m input
+    while looping:
+        try: # try/except to handle errors
+            # get input, set to variable m            
             m = int(input("Enter integer m: "))
-# boolean if true (they entered 0, try again.)            
-            if m == 0: 
+            # boolean if true (they entered 0,
+            # try again.)                     
+            if m == 0:
                 print("""
 ZeroDivisionError: Can not divide by zero,
 integer division or modulo by zero;
@@ -110,8 +128,8 @@ integer division or modulo by zero;
 """)
                 continue # loop again if error
             
-# exception error here to block system error and
-#   stop / crash program.            
+        # exception error here to block system
+        # error and stop / crash program.            
         except ValueError: 
             print("""
 
@@ -120,11 +138,14 @@ letter, or non whole number). Try again.
 
 """)
             #continue if error not required here
-            
-# if an int (validated good entry) break out of
-#   loop.        
+                   
         else: # if input is valid exit loop
-            break  # break exits loop
+            #break  # break exits loop; required
+            #if you don't initialize while var
+            
+            looping = False # while var exits loop
+                      # eliminates use of break
+                      
 # return the variables to the function that
 #   called (main).        
     return n, m    
