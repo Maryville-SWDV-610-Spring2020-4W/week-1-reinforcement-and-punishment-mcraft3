@@ -15,3 +15,5 @@ Fri 3/13 uploaded admin cleanup and a minor update to string formatting for puni
 Sat 3/14 uploaded final is_multiple.py and punishment.py that includes minor comment addition for the else break for is.multiple.py.
 
 Sun 3/15 last update are th files in branch final-submission-update-with-files. I commented out 2 uses of continue (on the excepts) that were not needed. I retained use of a continue statement on the zero division handling and updated the print statement on the zero division handling. Although the previous version ran correct, this is a cleaner and more accurate use of when and where to use continue.
+
+Sun 3/15 eliminated use of break by initialized a while loop variable running and looping set to True. Avoids lazy coding and what is essentially an infinite loop that I was breaking out of. Includes some admin cleanup.
