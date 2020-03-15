@@ -13,3 +13,5 @@ Fri 3/13 am uploaded an update to is_multiple.py that added pre-emptive error co
 Fri 3/13 uploaded admin cleanup and a minor update to string formatting for punishment.py.
 
 Sat 3/14 uploaded final is_multiple.py and punishment.py that includes minor comment addition for the else break for is.multiple.py.
+
+Sun 3/15 last update are th files in branch final-submission-update-with-files. I commented out 2 uses of continue (on the excepts) that were not needed. I retained use of a continue statement on the zero division handling and updated the print statement on the zero division handling. Although the previous version ran correct, this is a cleaner and more accurate use of when and where to use continue.
