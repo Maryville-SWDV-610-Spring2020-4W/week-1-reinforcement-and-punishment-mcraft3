@@ -84,7 +84,8 @@ Error: Entry must be an integer (not a decimal,
 letter, or non whole number). Try again.
 
 """)
-            continue # loop again if error
+            #continue if error not required here
+            
 # if an int (validated good entry) break out of
 #   loop.        
         else: # if input is valid exit loop
@@ -103,12 +104,12 @@ letter, or non whole number). Try again.
 # boolean if true (they entered 0, try again.)            
             if m == 0: 
                 print("""
-
-ZeroDivisionError: Can not divide by zero;
+ZeroDivisionError: Can not divide by zero,
+integer division or modulo by zero;
 2nd number can not be zero. Try again.
-
 """)
                 continue # loop again if error
+            
 # exception error here to block system error and
 #   stop / crash program.            
         except ValueError: 
@@ -118,7 +119,8 @@ Error: Entry must be an integer (not a decimal,
 letter, or non whole number). Try again.
 
 """)
-            continue # loop again if error
+            #continue if error not required here
+            
 # if an int (validated good entry) break out of
 #   loop.        
         else: # if input is valid exit loop
