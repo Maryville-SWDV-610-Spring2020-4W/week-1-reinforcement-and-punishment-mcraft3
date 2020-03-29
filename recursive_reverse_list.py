@@ -6,7 +6,7 @@ Module 3.9 Writing Recursive Functions PE-2
 Maryville University of St. Louis, MO
 John E. Simon School of Business
 Professor Timothy Kyle
-Student Mike Craft """
+Student Mike Craft  """
 # ------------------------------------------------
 """2. Write a recursive function to reverse a
       list."""
