@@ -1,3 +1,5 @@
+Sunday 3/29 final cleanup posed here to github and also to canvas with updated video. This update is a cleanup, and minor code change to enable all internal cycle data to print for demo discussion, explain.
+
 updated final week 3, provides reverse list file, and the minmax file that provides a min max function and a function to sort min to max.
 
 
