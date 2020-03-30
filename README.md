@@ -1,3 +1,6 @@
+updated final week 3, provides reverse list file, and the minmax file that provides a min max function and a function to sort min to max.
+
+
 # week-1-reinforcement-and-punishment-mcraft3
 week-1-reinforcement-and-punishment-mcraft3 created by GitHub Classroom
 
