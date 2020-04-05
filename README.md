@@ -1,5 +1,7 @@
 wk4: Tweaked print stack and print queue to be able to print none similar to print deque. is empty if no nodes prints true or false if a node, and size reports number of nodes, if zero 0, and if nodes exist their count. This change is only to make all the print stack/queue print none if no nodes vice error, or empty or raise.
 
+First and Final submission in git Hub. This is an update to canvas and these updates will be posted as fnal in canvas with updated videos. This updates the .size method for stack and queue. Not that my program uses them as methods, but I wanted the size function of all three to work the same. Most updates are grammar beyond that in comments. Size will report if 0, return 0, vice none or raising an error or Empty. This is greatly explained in the Deque video. is_empty will report True if empty, size will report size if 0 or 1 or 10 etc; print_queue will print none if there is none in the stack, queue or deque. This is my preference for sort of minimizing unnecessary errors and providing more useful feedback to the user.
+
 # week-1-reinforcement-and-punishment-mcraft3
 week-1-reinforcement-and-punishment-mcraft3 created by GitHub Classroom
 
