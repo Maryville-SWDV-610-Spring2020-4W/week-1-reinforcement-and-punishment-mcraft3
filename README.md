@@ -1,3 +1,5 @@
+wk4: Tweaked print stack and print queue to be able to print none similar to print deque. is empty if no nodes prints true or false if a node, and size reports number of nodes, if zero 0, and if nodes exist their count. This change is only to make all the print stack/queue print none if no nodes vice error, or empty or raise.
+
 # week-1-reinforcement-and-punishment-mcraft3
 week-1-reinforcement-and-punishment-mcraft3 created by GitHub Classroom
 
