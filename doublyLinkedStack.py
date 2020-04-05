@@ -145,7 +145,10 @@ class Stack:
     def print_stack(self): 
           
         print("stack elements are:") 
-        temp = self.head 
+        temp = self.head
+        if temp == None:
+            print("None")
+
         while temp is not None: 
             print(temp.data, end ="->") 
             temp = temp.next           

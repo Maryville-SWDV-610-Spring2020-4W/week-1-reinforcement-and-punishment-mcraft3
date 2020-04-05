@@ -7,7 +7,7 @@ and Lists and Lists. PE 3
 Maryville University of St. Louis, MO
 John E. Simon School of Business
 Professor Timothy Kyle
-Student Mike Craft   """
+Student Mike Craft"""
 # ------------------------------------------------
 """ Complete the following tasks
 

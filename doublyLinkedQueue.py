@@ -153,7 +153,9 @@ class Queue:
     def print_queue(self): 
            
         print("Players are: ", end='') 
-        temp=self.head 
+        temp=self.head
+        if temp == None:
+            print("None")        
         while temp is not None: 
             print(temp.data,end="->") 
             temp=temp.next
